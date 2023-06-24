@@ -36,6 +36,7 @@ Please make sure you have the following software installed on your machine:
    - Maven will build the project and download any required dependencies.
 4. Run the application:
    - Right-click on the project in the Eclipse Project Explorer.
+   - Set `app.data-seeding.enabled=true` to seed **Grade** data. _(Optional)_
    - Select `Run As` -> `Spring Boot App`.
    - The application will start, and you can access it using the provided URL or API endpoints.
 
@@ -85,6 +86,12 @@ This application follows the MVC design pattern along with the Service and Repos
    - Responsible for converting between Model objects and DTOs.
    - Helps in mapping the properties of the objects between different layers.
    - Allows separation of concerns and decouples the internal structure of objects from their external representation.
+  
+7. **Seed**:
+   - Location: `app.seed`
+   - Contains classes responsible for seeding initial or test data into the database.
+   - Typically used during application startup or for populating the database with predefined data.
+   - Helps in setting up a consistent state for testing purposes or pre-populating essential data.
 
 ### Benefits of the Design Pattern
 
